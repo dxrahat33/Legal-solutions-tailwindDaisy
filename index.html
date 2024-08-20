@@ -14,15 +14,21 @@
         tailwind.config = {
           theme: {
             extend: {
+              backgroundImage: {
+                'hero-pattern': "url('/images/banner.png')",
+              },
               colors: {
                 clifford: '#da373d',
                 main: '#B68C5A',
                 dark3: '#707070',
                 dark2: '#414040',
-              }
+                dark01: 'rgba(17, 17, 17, 1)',
+                dark00: 'rgba(17, 17, 17, 0)',
+              
             }
           }
         }
+      }
       </script>
       <style>
         .font-body{
@@ -140,19 +146,21 @@
              </nav>
 
              <!-- Main Content Area -->
-              <section>
-                <!-- bg image -->
-                <div class="bg-[url('/images/banner.png')] bg-cover bg-center bg-no-repeat w-full">
-                    <!-- heading text -->
-                     <div>
-                        <h1 class="text-white text-7xl">We Provide Effective <br> Legal Solutions</h1>
-                        <p class="text-white">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
-                     </div>
-                     <!-- Input Field -->
-                     <div>
-                        <input type="text" name="input" id="text" spellcheck="true" placeholder="Search your services">
-                        <input type="submit" value="submit">
-                     </div>
+              <section class="bg-hero-pattern bg-cover bg-center bg-no-repeat h-fit w-full">
+                <div class=" bg-gradient-to-t from-black/[0.8] to-white/[0.1]">
+                  <!-- bg image -->
+                  <div class="flex flex-col px-60 py-24 items-center">
+                      <!-- heading text -->
+                       <div class="space-y-2 text-center">
+                          <h1 class="text-white text-7xl font-head leading-relaxed">We Provide Effective <br> Legal Solutions</h1>
+                          <p class="text-gray-300 font-body pt-6 pb-8 w-9/12 mx-auto">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                       </div>
+                       <!-- Input Field -->
+                       <div class="flex items-center gap-6 mb-16">
+                          <input class="h-16 w-[500px] outline-none px-4 py-2 rounded-lg" type="text" name="input" id="text" spellcheck="true" placeholder="Search your services">
+                          <input class="btn bg-main border-0 h-16 w-36" type="submit" value="submit">
+                       </div>
+                  </div>
                 </div>
               </section>
          </header>
