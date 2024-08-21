@@ -1,171 +1,268 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Legal Solutions | DaisyUI</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              backgroundImage: {
-                'hero-pattern': "url('/images/banner.png')",
-              },
-              colors: {
-                clifford: '#da373d',
-                main: '#B68C5A',
-                dark3: '#707070',
-                dark2: '#414040',
-                dark01: 'rgba(17, 17, 17, 1)',
-                dark00: 'rgba(17, 17, 17, 0)',
-              
-            }
-          }
-        }
+      tailwind.config = {
+        theme: {
+          extend: {
+            backgroundImage: {
+              "hero-pattern": "url('/images/banner.png')",
+            },
+            colors: {
+              clifford: "#da373d",
+              main: "#B68C5A",
+              dark3: "#707070",
+              dark2: "#414040",
+              dark01: "rgba(17, 17, 17, 1)",
+              dark00: "rgba(17, 17, 17, 0)",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .font-body {
+        font-family: "Poppins", "sans-serif";
       }
-      </script>
-      <style>
-        .font-body{
-            font-family: "Poppins", "sans-serif";
-        }
-        .font-head{
-            font-family: "EB Garamond", "sans-serif";
-        }
-      </style>
-</head>
-<body>
-    
+      .font-head {
+        font-family: "EB Garamond", "sans-serif";
+      }
+    </style>
+  </head>
+  <body>
     <main class="md:container md:mx-auto">
-        <!-- header section -->
-         <header>
-            <!-- navbar  -->
-             <nav>
-                 <div class="navbar bg-base-100">
-                     <div class="navbar-start">
-                       <div class="dropdown">
-                         <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                           <svg
-                             xmlns="http://www.w3.org/2000/svg"
-                             class="h-5 w-5"
-                             fill="none"
-                             viewBox="0 0 24 24"
-                             stroke="currentColor">
-                             <path
-                               stroke-linecap="round"
-                               stroke-linejoin="round"
-                               stroke-width="2"
-                               d="M4 6h16M4 12h8m-8 6h16" />
-                           </svg>
-                         </div>
-                         <ul
-                           tabindex="0"
-                           class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                           <li>
-                             <li><a>Home</a></li>
-                         <li>
-                           <details>
-                             <summary>Service</summary>
-                             <ul class="p-2">
-                               <li><a>Business</a></li>
-                               <li><a>Tax</a></li>
-                               <li><a>Divorce</a></li>
-                             </ul>
-                           </details>
-                         </li>
-                         <li>
-                           <details>
-                             <summary>Cases</summary>
-                             <ul class="p-2">
-                               <li><a>Business</a></li>
-                               <li><a>Tax</a></li>
-                               <li><a>Divorce</a></li>
-                             </ul>
-                           </details>
-                         </li>
-                         <li>
-                           <details>
-                             <summary>Blog</summary>
-                             <ul class="p-2">
-                               <li><a>Business</a></li>
-                               <li><a>Tax</a></li>
-                               <li><a>Divorce</a></li>
-                             </ul>
-                           </details>
-                         </li>
-                         <li><a>Contact Us</a></li>
-                         </ul>
-                       </div>
-                       <a class="text-xl"><img src="images/logo2.png" alt=""></a>
-                     </div>
-                     <div class="navbar-center hidden lg:flex">
-                       <ul class="menu menu-horizontal px-1 text-xl">
-                         <li><a>Home</a></li>
-                         <li>
-                           <details>
-                             <summary>Service</summary>
-                             <ul class="p-2">
-                               <li><a>Business</a></li>
-                               <li><a>Tax</a></li>
-                               <li><a>Divorce</a></li>
-                             </ul>
-                           </details>
-                         </li>
-                         <li>
-                           <details>
-                             <summary>Cases</summary>
-                             <ul class="p-2">
-                               <li><a>Business</a></li>
-                               <li><a>Tax</a></li>
-                               <li><a>Divorce</a></li>
-                             </ul>
-                           </details>
-                         </li>
-                         <li>
-                           <details>
-                             <summary>Blog</summary>
-                             <ul class="p-2">
-                               <li><a>Business</a></li>
-                               <li><a>Tax</a></li>
-                               <li><a>Divorce</a></li>
-                             </ul>
-                           </details>
-                         </li>
-                         <li><a>Contact Us</a></li>
-                       </ul>
-                     </div>
-                     <div class="navbar-end">
-                       <a class="btn bg-main text-white md:px-7 md:py-3.5">Free Consultation</a>
-                     </div>
-                   </div>
-             </nav>
-
-             <!-- Main Content Area -->
-              <section class="bg-hero-pattern bg-cover bg-center bg-no-repeat h-fit w-full">
-                <div class=" bg-gradient-to-t from-black/[0.8] to-white/[0.1]">
-                  <!-- bg image -->
-                  <div class="flex flex-col px-60 py-24 items-center">
-                      <!-- heading text -->
-                       <div class="space-y-2 text-center">
-                          <h1 class="text-white text-7xl font-head leading-relaxed">We Provide Effective <br> Legal Solutions</h1>
-                          <p class="text-gray-300 font-body pt-6 pb-8 w-9/12 mx-auto">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
-                       </div>
-                       <!-- Input Field -->
-                       <div class="flex items-center gap-6 mb-16">
-                          <input class="h-16 w-[500px] outline-none px-4 py-2 rounded-lg" type="text" name="input" id="text" spellcheck="true" placeholder="Search your services">
-                          <input class="btn bg-main border-0 h-16 w-36" type="submit" value="submit">
-                       </div>
-                  </div>
+      <!-- header section -->
+      <header>
+        <!-- navbar  -->
+        <nav>
+          <div class="navbar bg-base-100">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h8m-8 6h16"
+                    />
+                  </svg>
                 </div>
-              </section>
-         </header>
-    </main>
-    
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+                >
+                  <li></li>
+                  <li><a>Home</a></li>
+                  <li>
+                    <details>
+                      <summary>Service</summary>
+                      <ul class="p-2">
+                        <li><a>Business</a></li>
+                        <li><a>Tax</a></li>
+                        <li><a>Divorce</a></li>
+                      </ul>
+                    </details>
+                  </li>
+                  <li>
+                    <details>
+                      <summary>Cases</summary>
+                      <ul class="p-2">
+                        <li><a>Business</a></li>
+                        <li><a>Tax</a></li>
+                        <li><a>Divorce</a></li>
+                      </ul>
+                    </details>
+                  </li>
+                  <li>
+                    <details>
+                      <summary>Blog</summary>
+                      <ul class="p-2">
+                        <li><a>Business</a></li>
+                        <li><a>Tax</a></li>
+                        <li><a>Divorce</a></li>
+                      </ul>
+                    </details>
+                  </li>
+                  <li><a>Contact Us</a></li>
+                </ul>
+              </div>
+              <a class="text-xl"><img src="images/logo2.png" alt="" /></a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1 text-xl">
+                <li><a>Home</a></li>
+                <li>
+                  <details>
+                    <summary>Service</summary>
+                    <ul class="p-2">
+                      <li><a>Business</a></li>
+                      <li><a>Tax</a></li>
+                      <li><a>Divorce</a></li>
+                    </ul>
+                  </details>
+                </li>
+                <li>
+                  <details>
+                    <summary>Cases</summary>
+                    <ul class="p-2">
+                      <li><a>Business</a></li>
+                      <li><a>Tax</a></li>
+                      <li><a>Divorce</a></li>
+                    </ul>
+                  </details>
+                </li>
+                <li>
+                  <details>
+                    <summary>Blog</summary>
+                    <ul class="p-2">
+                      <li><a>Business</a></li>
+                      <li><a>Tax</a></li>
+                      <li><a>Divorce</a></li>
+                    </ul>
+                  </details>
+                </li>
+                <li><a>Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end">
+              <a class="btn bg-main text-white md:px-7 md:py-3.5"
+                >Free Consultation</a
+              >
+            </div>
+          </div>
+        </nav>
 
-</body>
+        <!-- Main Content Area -->
+        <section
+          class="bg-hero-pattern bg-cover bg-center bg-no-repeat h-fit w-full">
+          <div class="bg-gradient-to-t from-black/[0.8] to-white/[0.1]">
+            <!-- bg image -->
+            <div class="flex flex-col md:px-60 px-6 py-8 md:py-24 items-center">
+              <!-- heading text -->
+              <div class="space-y-2 text-center">
+                <h1 class="text-white font-bold text-4xl md:text-7xl font-head leading-relaxed">
+                  We Provide Effective <br />
+                  Legal Solutions
+                </h1>
+                <p class="text-gray-300 font-body pt-6 pb-8 md:w-8/12 w-full mx-auto">
+                  There are many variations of passages of Lorem Ipsum
+                  available, but the majority have suffered alteration in some
+                  form, by injected humour.
+                </p>
+              </div>
+              <!-- Input Field -->
+              <div class="flex items-center gap-2 md:gap-6 mb-16">
+                <input
+                  class="h-16 md:w-[500px] outline-none px-4 py-2 rounded-lg"
+                  type="text"
+                  name="input"
+                  id="text"
+                  spellcheck="true"
+                  placeholder="Search your services"
+                />
+                <input
+                  class="btn bg-main border-0 h-16 md:w-36"
+                  type="submit"
+                  value="submit"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+      </header>
+
+      <!-- Legal Practice Area -->
+       <section class="mb-96">
+        <!-- title -->
+         <div class="mt-12 md:mt-40 text-center space-y-4 md:space-y-8 md:mb-16 mb-8">
+          <h1 class="text-2xl font-extrabold md:text-5xl font-head">The Legal Practice Area</h1>
+          <p class="font-body md:w-1/2 mx-auto">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+         </div>
+         <!-- Card Container -->
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 px-2 py-2">
+            <!-- Card no - 1 -->
+             <div class="hover:bg-gradient-to-b from-black/[0.1] to-white/[0.1] flex items-center flex-col md:px-16 px-4 md:py-20 py-8 gap-4 md:gap-8 text-center border-b md:border-r border-gray-200">
+              <img src="images/criminal.png" alt="">
+              <h4 class="text-3xl font-head font-semibold">Criminal Law</h4>
+              <p class="font-body">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+              <img src="images/Frame.png" alt="">
+             </div>
+
+             <!-- Card no - 2 -->
+             <div class="hover:bg-gradient-to-b from-black/[0.1] to-white/[0.1] flex items-center flex-col md:px-16 px-4 md:py-16 py-8 gap-4 md:gap-8 text-center border-b lg:border-r border-gray-200">
+              <img src="images/criminal.png" alt="">
+              <h4 class="text-3xl font-head font-semibold">Criminal Law</h4>
+              <p class="font-body">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+              <img src="images/Frame.png" alt="">
+             </div>
+
+             <!-- Card no - 3 -->
+             <div class="hover:bg-gradient-to-b from-black/[0.1] to-white/[0.1] flex items-center flex-col md:px-16 px-4 md:py-20 py-8 gap-4 md:gap-8 text-center border-b md:border-r lg:border-r-0 border-gray-200">
+              <img src="images/criminal.png" alt="">
+              <h4 class="text-3xl font-head font-semibold">Criminal Law</h4>
+              <p class="font-body">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+              <img src="images/Frame.png" alt="">
+             </div>
+
+             <!-- Card no - 4 -->
+             <div class="hover:bg-gradient-to-b from-black/[0.1] to-white/[0.1] flex items-center flex-col md:px-16 px-4 md:py-20 py-8 gap-4 md:gap-8 text-center border-gray-200 sm:border-b lg:border-r lg:border-b-0">
+              <img src="images/criminal.png" alt="">
+              <h4 class="text-3xl font-head font-semibold">Criminal Law</h4>
+              <p class="font-body">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+              <img src="images/Frame.png" alt="">
+             </div>
+
+             <!-- Card no - 5 -->
+             <div class="hover:bg-gradient-to-b from-black/[0.1] to-white/[0.1] flex items-center flex-col md:px-16 px-4 md:py-20 py-8 gap-4 md:gap-8 text-center border-gray-200 sm:border-b md:border-b-0 md:border-r">
+              <img src="images/criminal.png" alt="">
+              <h4 class="text-3xl font-head font-semibold">Criminal Law</h4>
+              <p class="font-body">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+              <img src="images/Frame.png" alt="">
+             </div>
+
+             <!-- Card no - 6 -->
+             <div class="hover:bg-gradient-to-b from-black/[0.1] to-white/[0.1] flex items-center flex-col md:px-16 px-4 md:py-20 py-8 gap-4 md:gap-8 text-center border-gray-200 sm:border-b md:border-b-0">
+              <img src="images/criminal.png" alt="">
+              <h4 class="text-3xl font-head font-semibold">Criminal Law</h4>
+              <p class="font-body">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+              <img src="images/Frame.png" alt="">
+             </div>
+
+            
+
+
+             
+          </div>
+       </section>
+    </main>
+  </body>
 </html>
